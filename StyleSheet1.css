@@ -1,0 +1,134 @@
+﻿/* Previous CSS remains the same, add these new styles */
+
+/* Payment Methods */
+.payment-methods {
+    display: flex;
+    gap: 10px;
+    margin: 25px auto;
+    max-width: 500px;
+}
+
+.payment-option {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+    .payment-option.active {
+        border-color: var(--primary);
+        background: rgba(229, 25, 55, 0.1);
+    }
+
+    .payment-option i {
+        margin: 0 3px;
+        font-size: 1.2rem;
+    }
+
+.payment-details {
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    background: #f9f9f9;
+}
+
+/* Credit Card Input Styling */
+#card-number, #expiry, #cvc {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Language Selector */
+.language-selector {
+    position: relative;
+    margin-right: auto;
+    margin-left: 30px;
+}
+
+    .language-selector button {
+        background: none;
+        border: none;
+        color: white;
+        font-weight: 600;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .language-selector ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: white;
+        border-radius: 5px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        list-style: none;
+        padding: 10px 0;
+        width: 150px;
+        z-index: 100;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10px);
+        transition: all 0.3s ease;
+    }
+
+    .language-selector:hover ul {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .language-selector li a {
+        display: block;
+        padding: 8px 15px;
+        color: var(--dark);
+    }
+
+        .language-selector li a:hover {
+            background: #f5f5f5;
+            color: var(--primary);
+        }
+
+/* Legal Disclosures */
+.legal-disclosures {
+    font-size: 0.8rem;
+    opacity: 0.7;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+/* Form Validation */
+input:invalid, textarea:invalid {
+    border-color: #ff6b6b;
+}
+
+input:focus:invalid, textarea:focus:invalid {
+    box-shadow: 0 0 0 2px rgba(255, 107, 107, 0.2);
+}
+
+/* Print Styles */
+@media print {
+    .main-nav, .mobile-menu-btn, .language-selector, .final-cta, .charity-footer {
+        display: none !important;
+    }
+
+    body {
+        background: white;
+        color: black;
+        font-size: 12pt;
+    }
+
+    .donation-card {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+}

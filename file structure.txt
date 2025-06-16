@@ -1,0 +1,34 @@
+﻿/cancer-charity-website
+│
+├── /images
+│   ├── branding/
+│   │   ├── logo-white.png
+│   │   ├── logo-color.png
+│   │   └── favicon.png
+│   │
+│   ├── ribbons/
+│   │   ├── pink-ribbon.png
+│   │   ├── gold-ribbon.png
+│   │   └── awareness-ribbons.png
+│   │
+│   ├── people/
+│   │   ├── hero-group.jpg
+│   │   ├── researcher-lab.jpg
+│   │   ├── doctor-patient.jpg
+│   │   ├── survivor-portrait.jpg
+│   │   └── family-support.jpg
+│   │
+│   ├── research/
+│   │   ├── lab-equipment.jpg
+│   │   ├── microscope-view.jpg
+│   │   └── clinical-trial.jpg
+│   │
+│   └── events/
+│       ├── charity-walk.jpg
+│       ├── gala-event.jpg
+│       └── candlelight-vigil.jpg
+│
+├── index.html
+├── styles.css
+├── script.js
+└── donate.php
